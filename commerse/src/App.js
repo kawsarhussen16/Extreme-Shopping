@@ -16,12 +16,18 @@ class App extends Component {
       currentUser: ""
     };
   }
+  SignOutFromAuth = null;
+
   componentDidMount() {
-    auth.onAuthStateChanged(user => {
+    this.SignOutFromAuth = auth.onAuthStateChanged(user => {
       this.setState({ currentUser: user });
       console.log(user);
     });
   }
+  componentWillUnmount() {
+    this.SignOutFromAuth();
+  }
+
   render() {
     return (
       <div className="App">
