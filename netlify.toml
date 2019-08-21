@@ -1,5 +1,5 @@
 
 [build]
-base = "commerse/"
-publish = "commerse/build/"
+base = "commerce/"
+publish = "commerce/build/"
 command = "yarn build"
