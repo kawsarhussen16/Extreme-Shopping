@@ -3,13 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyCstkparUPdPZuSMHuIbLdgPy_UQEjN99w",
-  authDomain: "ecommerse-1463d.firebaseapp.com",
-  databaseURL: "https://ecommerse-1463d.firebaseio.com",
-  projectId: "ecommerse-1463d",
-  storageBucket: "",
-  messagingSenderId: "532521673783",
-  appId: "1:532521673783:web:616c48263babf778"
+  apiKey: "AIzaSyA-ncSYnklztCoR2C-Rv6bmXF0FJl0J4rs",
+  authDomain: "ecommerse-a855f.firebaseapp.com",
+  databaseURL: "https://ecommerse-a855f.firebaseio.com",
+  projectId: "ecommerse-a855f",
+  storageBucket: "ecommerse-a855f.appspot.com",
+  messagingSenderId: "413357243256",
+  appId: "1:413357243256:web:e3730907504ab83c"
 };
 
 firebase.initializeApp(config);
