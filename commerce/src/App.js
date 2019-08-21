@@ -4,7 +4,7 @@ import Homepage from "./pages/homepage/homepage.js";
 import ShopPage from "./pages/shop-page/shop.js";
 import Header from "./components/header/header.js";
 import SignInUP from "./pages/signIn&up/signIn-Up";
-import { auth } from "./firebase/firebase.js";
+import { auth, createUserProfileDocument } from "./firebase/firebase.js";
 
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
@@ -13,15 +13,27 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentUser: ""
+      currentUser: null
     };
   }
   SignOutFromAuth = null;
 
   componentDidMount() {
-    this.SignOutFromAuth = auth.onAuthStateChanged(user => {
+    this.SignOutFromAuth = auth.onAuthStateChanged(async user => {
+      if (user) {
+        const userRef = await createUserProfileDocument(user);
+
+        userRef.onSnapshot(snap => {
+          this.setState({
+            currentUser: {
+              id: snap.id,
+              ...snap.data()
+            }
+          });
+          console.log(this.state);
+        });
+      }
       this.setState({ currentUser: user });
-      console.log(user);
     });
   }
   componentWillUnmount() {
