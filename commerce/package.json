@@ -1,7 +1,8 @@
 {
-  "name": "monster-rollodex",
+  "name": "commerce",
   "version": "0.1.0",
   "private": true,
+  "author": "Md Kawsar Hussen <kawsarhussen@gmail.com> ",
   "dependencies": {
     "firebase": "^6.4.0",
     "node-sass": "^4.12.0",
