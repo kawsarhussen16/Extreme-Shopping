@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Homepage from "./pages/homepage/homepage.js";
 import ShopPage from "./pages/shop-page/shop.js";
@@ -12,50 +12,51 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import { connect } from 'react-redux';
 
-class App extends Component {
-  SignOutFromAuth = null;
+class App extends React.Component {
+  unsubscribeFromAuth = null;
 
   componentDidMount() {
     const { setCurrentUser } = this.props;
-    this.SignOutFromAuth = auth.onAuthStateChanged(async user => {
-      if (user) {
-        const userRef = await createUserProfileDocument(user);
 
-        userRef.onSnapshot(snap => {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if (userAuth) {
+        const userRef = await createUserProfileDocument(userAuth);
+
+        userRef.onSnapshot(snapShot => {
           setCurrentUser({
-            currentUser: {
-              id: snap.id,
-              ...snap.data()
-            }
+            id: snapShot.id,
+            ...snapShot.data()
           });
-          console.log(this.state);
         });
       }
-      setCurrentUser({ currentUser: user });
-      console.log({ user })
+
+      setCurrentUser(userAuth);
     });
   }
+
   componentWillUnmount() {
-    this.SignOutFromAuth();
+    this.unsubscribeFromAuth();
   }
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route path="/signin" component={SignInUP} />
+          <Route exact path='/' component={Homepage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route path='/signin' component={SignInUP} />
         </Switch>
       </div>
     );
   }
 }
 
-
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);
