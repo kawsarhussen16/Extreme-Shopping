@@ -11,7 +11,8 @@ import { setCurrentUser } from './redux/user/user-action.js';
 import { selectCurrentUser } from './redux/user/user.selector.js';
 
 import "./App.css";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect, BrowserRouter as Router } from "react-router-dom";
+
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -43,20 +44,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path='/' component={Homepage} />
-          <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={Checkout} />
-          <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />
-          ) : (
-              <SignInUP />
-            )
-          }
-          />
-        </Switch>
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path='/' component={Homepage} />
+            <Route path='/shop' component={ShopPage} />
+            <Route exact path='/checkout' component={Checkout} />
+            <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />
+            ) : (
+                <SignInUP />
+              )
+            }
+            />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
