@@ -17,11 +17,12 @@ const CartToggle = ({ cartItems, history, dispatch }) => (
             ) : (
                     <span className='empty-message'>Your cart is empty</span>
                 )}
-            <Button onClick={() => {
-                history.push('/checkout');
-                dispatch(toggleCartHidden());
-            }} > CHECKOUT </Button>
+
         </div>
+        <Button onClick={() => {
+            history.push('/checkout');
+            dispatch(toggleCartHidden());
+        }} > CHECKOUT </Button>
     </div >
 );
 
