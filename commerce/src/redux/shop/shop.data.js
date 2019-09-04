@@ -243,6 +243,116 @@ const SHOP_DATA = {
                 price: 25
             }
         ]
+    },
+    kids: {
+        id: 6,
+        title: 'Kids',
+        routeName: 'kids',
+        items: [
+            {
+                id: 36,
+                name: 'Relaxed Open-Sweater',
+                imageUrl: 'https://images.unsplash.com/photo-1489681215838-e7e1c56c4e17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+                price: 24
+            },
+            {
+                id: 37,
+                name: 'Jersey Dress for Girls',
+                imageUrl: 'https://images.unsplash.com/photo-1548964439-ff1b81205cd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 12
+            },
+            {
+                id: 38,
+                name: 'Pop-Color Jeggings for Girls',
+                imageUrl: 'https://images.unsplash.com/photo-1548867568-1c413b952f79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 24
+            },
+            {
+                id: 39,
+                name: 'Graphic Long-Sleeve Tee for Boys',
+                imageUrl: 'https://images.unsplash.com/photo-1551962419-dd504f20a479?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 16
+            },
+            {
+                id: 40,
+                name: 'Straight Built-In Flex Uniform Pants for Boys',
+                imageUrl: 'https://images.unsplash.com/photo-1493357335960-4583bfa6f8d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 18
+            }
+        ]
+    },
+    watches: {
+        id: 7,
+        title: 'watches',
+        routeName: 'watches',
+        items: [
+            {
+                id: 41,
+                name: "BREIR Men's Fashion Minimalist Wrist Watch",
+                imageUrl: 'https://images.unsplash.com/photo-1523268755815-fe7c372a0349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 125
+            },
+            {
+                id: 42,
+                name: 'Mens Watch Ultra Thin Wrist',
+                imageUrl: 'https://images.unsplash.com/photo-1495704907664-81f74a7efd9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 90
+            },
+            {
+                id: 43,
+                name: 'Omega Mens Stainless Steel',
+                imageUrl: 'https://images.unsplash.com/photo-1562928019-0ab1e751fe66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 90
+            },
+            {
+                id: 44,
+                name: 'Girls Leather Strap Watch',
+                imageUrl: 'https://images.unsplash.com/photo-1551480634-4263800a3868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 165
+            },
+            {
+                id: 45,
+                name: 'Rose Gold Steel Ladies Watch',
+                imageUrl: 'https://images.unsplash.com/photo-1525740664269-1bb17f251737?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 185
+            }
+        ]
+    }, sunglasses: {
+        id: 8,
+        title: 'sunglasses',
+        routeName: 'sunglasses',
+        items: [
+            {
+                id: 46,
+                name: 'Lightweight Polarized Sunglasses ',
+                imageUrl: 'https://images.unsplash.com/photo-1558254928-a269c2970677?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 65
+            },
+            {
+                id: 47,
+                name: 'UV Protection Sunglasses ',
+                imageUrl: 'https://images.unsplash.com/photo-1564005470699-81cd492e171d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 97
+            },
+            {
+                id: 48,
+                name: 'OLIUR Rectangular Polarized',
+                imageUrl: 'https://images.unsplash.com/photo-1473409872320-f3f1bb4e89c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 93
+            },
+            {
+                id: 49,
+                name: 'Sport Sunglasses',
+                imageUrl: 'https://images.unsplash.com/photo-1551632494-bba43419b32b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+                price: 75
+            },
+            {
+                id: 50,
+                name: 'Fuel Cell Rectangular ',
+                imageUrl: 'https://images.unsplash.com/photo-1547157283-087711e7858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60',
+                price: 185
+            }
+        ]
     }
 };
 

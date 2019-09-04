@@ -2,35 +2,56 @@ const INITIAL_STATE = {
     sections: [
         {
             title: 'hats',
-            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+            imageUrl: 'https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60',
             id: 1,
             linkUrl: 'shop/hats'
         },
         {
             title: 'jackets',
-            imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+            imageUrl: 'https://images.unsplash.com/photo-1545594861-3bef43ff2fc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
             id: 2,
             linkUrl: 'shop/jackets'
         },
         {
             title: 'sneakers',
-            imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+            imageUrl: 'https://images.unsplash.com/photo-1548187669-429728b44fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
             id: 3,
             linkUrl: 'shop/sneakers'
         },
         {
             title: 'womens',
-            imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+            imageUrl: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
             size: 'large',
             id: 4,
             linkUrl: 'shop/womens'
         },
         {
             title: 'mens',
-            imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+            imageUrl: 'https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
             size: 'large',
             id: 5,
             linkUrl: 'shop/mens'
+        },
+        {
+            title: 'kids',
+            imageUrl: 'https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60',
+            size: 'large',
+            id: 5,
+            linkUrl: 'shop/kids'
+        },
+        {
+            title: 'Watches',
+            imageUrl: 'https://images.unsplash.com/photo-1515768523934-8b2a506819b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+            size: 'large',
+            id: 5,
+            linkUrl: 'shop/watches'
+        },
+        {
+            title: 'Sunglasses',
+            imageUrl: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+            size: 'large',
+            id: 5,
+            linkUrl: 'shop/sunglasses'
         }
     ]
 };
