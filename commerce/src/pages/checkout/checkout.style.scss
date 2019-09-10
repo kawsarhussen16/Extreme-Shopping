@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+  @media screen and (max-width: 500px) {
+          width: 95%;
+    }
 
   .checkout-header {
     width: 100%;
@@ -12,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
+    @media screen and (max-width: 500px) {
+          width: 95%;
+          margin: auto;
+    }
 
     .header-block {
       text-transform: capitalize;
