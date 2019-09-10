@@ -1,7 +1,7 @@
 .collection-preview {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   .title {
     font-size: 28px;
@@ -9,7 +9,8 @@
   }
 
   .preview {
-    display: flex;
+     display: flex;
+     flex-wrap: wrap;
     justify-content: space-between;
   }
 }

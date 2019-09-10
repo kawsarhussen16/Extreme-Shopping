@@ -5,6 +5,13 @@
   height: 350px;
   align-items: center;
   position: relative;
+  padding: 10px;
+
+  @media screen and (max-width: 500px) {
+            height: 300px;  
+            margin: 20px auto; 
+            padding: 3px;     
+        }
 
   .image {
     width: 100%;
@@ -12,6 +19,10 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+    @media screen and (max-width: 500px) {
+            height: 350px;
+            width: 250px;
+        }
   }
 
   .custom-button {
@@ -20,6 +31,9 @@
     position: absolute;
     top: 255px;
     display: none;
+     @media screen and (max-width: 500px) {
+            top: 60%;
+        }
   }
 
   &:hover {
@@ -39,6 +53,13 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+     @media screen and (max-width: 500px) {
+            flex-wrap:wrap;
+            flex-direction: column;
+            width: 250px;
+            height: 40px;
+            padding: 15px;
+        }
 
     .name {
       width: 90%;
@@ -47,6 +68,9 @@
 
     .price {
       width: 10%;
+       @media screen and (max-width: 500px) {
+            width: 5%;
+        }
     }
   }
 }
