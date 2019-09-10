@@ -36,21 +36,21 @@ const INITIAL_STATE = {
             title: 'kids',
             imageUrl: 'https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60',
             size: 'large',
-            id: 5,
+            id: 6,
             linkUrl: 'shop/kids'
         },
         {
             title: 'Watches',
             imageUrl: 'https://images.unsplash.com/photo-1515768523934-8b2a506819b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
             size: 'large',
-            id: 5,
+            id: 7,
             linkUrl: 'shop/watches'
         },
         {
             title: 'Sunglasses',
             imageUrl: 'https://images.unsplash.com/photo-1551281812-f1e0aabc4650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
             size: 'large',
-            id: 5,
+            id: 8,
             linkUrl: 'shop/sunglasses'
         }
     ]
