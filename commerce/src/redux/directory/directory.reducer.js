@@ -48,7 +48,7 @@ const INITIAL_STATE = {
         },
         {
             title: 'Sunglasses',
-            imageUrl: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60',
+            imageUrl: 'https://images.unsplash.com/photo-1551281812-f1e0aabc4650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
             size: 'large',
             id: 5,
             linkUrl: 'shop/sunglasses'
