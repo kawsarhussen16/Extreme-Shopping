@@ -2,12 +2,40 @@
   width: 380px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 800px) {
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+  }
+   @media screen and (max-width: 500px) {
+     width: 95%;
+     margin: auto auto 45px auto;
+     padding: auto;   
+    }
 
   .title {
     margin: 10px 0;
+    @media screen and (max-width: 800px) {
+        margin: 0;
+        padding:0;
+    }
   }
   .button {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 800px) {
+          flex-wrap: wrap;
+          .custom-button{
+            width: 200px;
+            margin: 10px auto;
+          }
+        }
+    @media screen and (max-width: 500px) {
+          flex-wrap:wrap;
+          .custom-button{
+            width: 230px;
+            margin: 10px auto;
+          }
+    }
   }
 }

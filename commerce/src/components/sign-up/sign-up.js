@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import FormInput from "../form-input/form-input.js";
 import { auth, createUserProfileDocument } from "../../firebase/firebase.js";
 import FormButton from "../form-button/form-button";
+import "./sign-up.style.scss";
 
 export default class SignUp extends Component {
   constructor() {
@@ -97,7 +98,10 @@ export default class SignUp extends Component {
             label="Confirm Password"
             required
           />
-          <FormButton type="submit">SIGN UP</FormButton>
+          <div className="button">
+            <FormButton type="submit">SIGN UP</FormButton>
+          </div>
+
         </form>
       </div>
     );
