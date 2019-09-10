@@ -11,7 +11,12 @@
             height: 300px;  
             margin: 20px auto; 
             padding: 3px;     
-        }
+  }
+   @media screen and (max-width: 800px) {
+            height: 250px;  
+            margin: 2px auto; 
+            padding: 1px;     
+    }
 
   .image {
     width: 100%;
@@ -22,7 +27,7 @@
     @media screen and (max-width: 500px) {
             height: 350px;
             width: 250px;
-        }
+    }
   }
 
   .custom-button {
@@ -31,9 +36,15 @@
     position: absolute;
     top: 255px;
     display: none;
+    @media screen and (max-width: 800px) {
+            top: 70%;
+            width: 90%;
+      }
      @media screen and (max-width: 500px) {
-            top: 60%;
-        }
+            top: 55%;
+            min-width: 165px;
+      }
+      
   }
 
   &:hover {
