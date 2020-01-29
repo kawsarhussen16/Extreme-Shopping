@@ -1,0 +1,21 @@
+.footer-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    .copyright{
+        font-size: 12px;
+        margin: -4px 0 0 4px;
+        bottom: -10px;
+        @media screen and (max-width: 500px) {
+            position: absolute;
+            bottom: 10px;
+        }
+        @media screen and (max-width: 800px) {
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+}
