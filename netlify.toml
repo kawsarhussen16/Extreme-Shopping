@@ -1,9 +1,4 @@
 
-[build]
-base = "commerce/"
-publish = "commerce/build/"
-command = "yarn build"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
