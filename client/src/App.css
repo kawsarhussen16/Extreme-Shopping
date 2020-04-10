@@ -1,7 +1,6 @@
 body {
   font-family: "Open Sans Condensed";
   padding: 20px 60px;
-  background-color: #FFE2E2;
 }
 @media only screen and (max-width: 600px) {
   body {
