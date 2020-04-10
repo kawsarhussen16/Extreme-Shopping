@@ -8,7 +8,6 @@ import { selectCurrentUser } from "./redux/user/user.selector.js";
 import Footer from "./components/footer/footer.js";
 import Header from "./components/header/header.js";
 import "./App.css";
-
 import { auth, createUserProfileDocument } from "./firebase/firebase.js";
 import Spinner from "./components/spinner/Spinner";
 const Homepage = lazy(() => import("./pages/homepage/homepage.js"));
@@ -18,7 +17,7 @@ const Checkout = lazy(() => import("./pages/checkout/checkout.js"));
 const SignInUP = lazy(() => import("./pages/signIn&up/signIn-Up"));
 
 class App extends Component {
-    unsubscribeFromAuth = null;
+    unsubscribeFromSnapShot = null;
 
     componentDidMount() {
         const { setCurrentUser } = this.props;
@@ -62,8 +61,8 @@ class App extends Component {
                                         this.props.currentUser ? (
                                             <Redirect to="/" />
                                         ) : (
-                                            <SignInUP />
-                                        )
+                                                <SignInUP />
+                                            )
                                     }
                                 />
                                 <Route path="/" component={Footer} />
@@ -78,7 +77,7 @@ class App extends Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-    currentUser: selectCurrentUser
+    currentUser: selectCurrentUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({
