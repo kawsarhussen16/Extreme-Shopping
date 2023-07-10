@@ -7,7 +7,7 @@ export default function footer() {
         © 2020 Copyright: Site By{" "}
         <a
           rel="noopener noreferrer"
-          href="https://kawsarhussen.com/"
+          href="https://kawsarhussen.netlify.app/"
           target="_blank"
         >
           Md Kawsar Hussen
